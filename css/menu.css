@@ -1,0 +1,41 @@
+
+nav{
+    height: 20vh;
+    transition: all 0.4s ease-in-out;
+}
+.nav-small{
+    height: 10vh;
+}
+
+.nav-wrapper{
+    max-width: 80vw;
+    margin-left: 10vw;
+    display: flex;
+    justify-content: space-around;
+
+}
+.logo-img {
+    height: 50%;
+    margin-top: 5%;
+    
+}
+
+.menu-links{
+    margin-top: 6.5%;
+    
+}
+.menu-text{
+    color: #742369;
+    
+    font-weight: 600;
+    font-size: 18px;
+    font-size: calc(100%)
+}
+
+.sidenav-trigger{
+    margin-top: 5vh;
+}
+
+@media only screen and (max-width: 720px) {
+
+}
