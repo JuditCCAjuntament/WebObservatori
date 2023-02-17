@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/title.css">
     <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/map.css">
 </head>
 
 <body>
@@ -34,8 +35,8 @@
             <div class="linksContainer">
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="hide-on-med-and-down">
-                    <li><a class="menu-text" href="">Sobre l’observatori</a></li>
-                    <li><a class="menu-text" href="">Mapa conceptual</a></li>
+                    <li><a class="menu-text" href="index.html#sobreLobservatoriID">Sobre l’observatori</a></li>
+                    <li><a class="menu-text" href="index.html#conceptualMapID">Mapa conceptual</a></li>
                     <li><a class="menu-text collapsibleIndicadors" href="">Indicadors<i
                                 class="material-icons">expand_more</i></a></li>
                     <li><a class="menu-text" href="">Divulgació</a></li>
@@ -47,9 +48,9 @@
     </nav>
 
     <ul class="sidenav mobileNavContainer" id="mobile-demo">
-        <li><a class="menu-text" href="">Sobre l’observatori</a></li>
+        <li><a class="menu-text" href="index.html#sobreLobservatoriID">Sobre l’observatori</a></li>
         <hr>
-        <li><a class="menu-text" href="">Mapa conceptual</a></li>
+        <li><a class="menu-text" href="index.html#conceptualMapID">Mapa conceptual</a></li>
         <hr>
         <li>
             <a class="menu-text" href="">Indicadors</a>
@@ -76,14 +77,14 @@
         <div class="mainTitle">
             <h1>OBSERVATORI PER L’EQUITAT I LA <br> IGUALTAT D’OPORTUNITATS <br> EDUCATIVES</h1>
         </div>
-        <div class="aboutDiv">
-            <div class="sobreLobservatoriDiv aboutSuvDiv">
+        <div class="aboutDiv" >
+            <div class="sobreLobservatoriDiv aboutSuvDiv" >
                 <h2>Sobre l’Observatori</h2>
                 <p>L’Observatori pretén ser una eina per a millorar el nivell de coneixement sobre l’equitat i la
                     igualtat d’oportunitats educatives, així com també apropar i difondre a la població de Manresa i
                     agents d’interès les dades recollides.
                 </p>
-                <img src="res/img/observatori.png" alt="Image not found">
+                <img src="res/img/observatori.png" alt="Image not found" id="sobreLobservatoriID">
             </div>
             <div class="perqueImportantDiv aboutSuvDiv">
                 <h2>Per què és important l’Observatori?</h2>
@@ -108,6 +109,9 @@
                 </ul>
             </div>
 
+        </div>
+        <div class="conceptualMapDiv">
+            <img src="res/img/mapa.jpg" alt="" id="conceptualMapID">
         </div>
     </div>
     <script src="js/main.js"></script>

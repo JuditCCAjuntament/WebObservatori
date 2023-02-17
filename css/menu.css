@@ -1,7 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: "Open Sans",Arial,sans-serif;
 }
 nav {
+    z-index: 999;
     transition: all 0.4s ease-in-out;
     height: 17vh;
     position: fixed;
@@ -58,6 +62,7 @@ nav i.material-icons {
     justify-items: right;
     border-bottom-width: 3px;
     border-bottom-color: #742369;
+    
 }
 
 .collapsibleItems a {

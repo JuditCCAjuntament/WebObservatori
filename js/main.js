@@ -3,6 +3,8 @@ $(document).ready(function () {
   $('.sidenav').sidenav();
   console.log("Init");
 });
+
+//Collapsible
 $( ".collapsibleIndicadors" ).hover(
   function() {
     $( ".collapsibleItems" ).css("display","flex");
