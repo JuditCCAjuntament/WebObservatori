@@ -1,34 +1,124 @@
-
-nav{
+nav {
     transition: all 0.4s ease-in-out;
     height: 20vh;
+    position: fixed;
 }
 
+nav ul li:hover {
+    background-color: white;
+}
 
-.nav-wrapper{
+.nav-wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 
 }
+
 .logo-img {
     height: 100%;
     margin-right: 5vh;
 }
 
-.menu-links{
-    margin-left: 2vh;
-    
-}
-.menu-text{
-    color: #742369;
+.menu-text {
+    color: #742369 !important;
     font-weight: 600;
     font-size: 18px;
-    font-size: calc(100%)
+    font-size: calc(100%) !important;
 }
 
+nav i.material-icons {
+    display: inline;
+    vertical-align: middle;
+    color: #742369;
+}
+
+.mainBody {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20vh;
+    align-items: center;
+}
+
+.collapsibleItems {
+    position: fixed;
+    display: none;
+    min-width: 100vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: #ffffff00;
+    justify-items: right;
+    border-bottom-width: 3px;
+    border-bottom-color: #742369;
+}
+
+.collapsibleItems a {
+    padding: 25px;
+
+}
+
+.collapsibleItems a:hover {
+    transition: background-color .3s;
+    background-color: rgba(233, 233, 233, 0.479);
+}
+.submenu{
+    margin-left: 10px;
+}
+
+hr{
+    width: 80%;
+    border-top-color:rgba(250, 235, 215, 0.301);
+    height: 1px;
+}
+
+.submenu li a{
+    color: #742369cb;
+    font-size: calc(120%) !important;
+}
+.mobileNavContainer{
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10vh;
+    padding-bottom: 30vh;
+    border: solid #742369 5vh;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    
+}
 
 @media only screen and (max-width: 720px) {
+    nav {
+        transition: all 0.4s ease-in-out;
+        height: 13vh;
+        position: fixed;
+    }
 
+    .logo-img {
+        margin-top: 1vh;
+        height: 7vh;
+        margin-right: 0vh;
+    }
+
+    .nav-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+    nav i.material-icons {
+        color: #742369;
+        font-size: 18px;
+        font-size: calc(250%)
+    }
+    .menu-text{
+        font-weight: 800;
+        font-size: calc(130%) !important;
+        
+    }
 }

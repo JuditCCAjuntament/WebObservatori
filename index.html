@@ -30,26 +30,47 @@
             </div>
             <div class="linksContainer">
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="hide-on-med-and-down menu-links">
-                    <li><a class="menu-text" href="sass.html">
-                            Sobre l’observatori</a></li>
+                <ul class="hide-on-med-and-down">
+                    <li><a class="menu-text" href="">Sobre l’observatori</a></li>
                     <li><a class="menu-text" href="">Mapa conceptual</a></li>
-                    <li><a class="menu-text" href="">Indicadors</a></li>
+                    <li><a class="menu-text collapsibleIndicadors" href="">Indicadors<i
+                                class="material-icons">expand_more</i></a></li>
                     <li><a class="menu-text" href="">Divulgació</a></li>
                     <li><a class="menu-text" href="">Contacte</a></li>
                 </ul>
             </div>
+
         </div>
     </nav>
 
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="">Sobre l’observatori</a></li>
-        <li><a href="">Mapa conceptual</a></li>
-        <li><a href="">Indicadors</a></li>
-        <li><a href="">Divulgació</a></li>
-        <li><a href="">Contacte</a></li>
+    <ul class="sidenav mobileNavContainer" id="mobile-demo">
+        <li><a class="menu-text" href="">Sobre l’observatori</a></li>
+        <hr>
+        <li><a class="menu-text" href="">Mapa conceptual</a></li>
+        <hr>
+        <li>
+            <a class="menu-text" href="">Indicadors</a>
+            <ul class="submenu">
+                <li><a href="">Indicadors Socioeconòmics</a></li>
+                <li><a href="">Indicadors Demogràfics</a></li>
+                <li><a href="">Indicadors Escolars</a></li>
+                
+            </ul>
+        </li>
+        <hr>
+        <li><a class="menu-text" href="">Divulgació</a></li>
+        <hr>
+        <li><a class="menu-text" href="">Contacte</a></li>
+        <hr>
     </ul>
 
+    <div class="mainBody">
+        <div class="collapsibleItems">
+            <a class="menu-text" href="">Indicadors Socioeconòmics</a>
+            <a class="menu-text" href="">Idicadors Demogràfics</a>
+            <a class="menu-text" href="">Indicadors Escolars</a>
+        </div>
+    </div>
     <script src="js/main.js"></script>
     <!-- Materialize Script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
