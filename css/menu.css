@@ -1,6 +1,9 @@
+body{
+    font-family: "Open Sans",Arial,sans-serif;
+}
 nav {
     transition: all 0.4s ease-in-out;
-    height: 20vh;
+    height: 17vh;
     position: fixed;
 }
 
@@ -17,8 +20,9 @@ nav ul li:hover {
 }
 
 .logo-img {
-    height: 100%;
-    margin-right: 5vh;
+    margin-top: 1vh;
+    height: 11vh;
+    margin-right: 5vw;
 }
 
 .menu-text {
@@ -37,12 +41,12 @@ nav i.material-icons {
 .mainBody {
     display: flex;
     flex-direction: column;
-    padding-top: 20vh;
     align-items: center;
 }
 
 .collapsibleItems {
     position: fixed;
+    margin-top: 17vh;
     display: none;
     min-width: 100vw;
     flex-direction: row;
@@ -50,6 +54,7 @@ nav i.material-icons {
     justify-content: center;
     border-style: solid;
     border-color: #ffffff00;
+    background-color: rgba(255, 255, 255, 0.85);
     justify-items: right;
     border-bottom-width: 3px;
     border-bottom-color: #742369;
@@ -120,5 +125,8 @@ hr{
         font-weight: 800;
         font-size: calc(130%) !important;
         
+    }
+    .mainBody{
+        padding-top: 13vh;
     }
 }
