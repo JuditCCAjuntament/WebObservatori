@@ -3,6 +3,7 @@ html {
 }
 body{
     font-family: "Open Sans",Arial,sans-serif;
+    min-height: 100vh;
 }
 nav {
     z-index: 999;
@@ -101,17 +102,20 @@ hr{
     
 }
 
+.moibleSearch{
+    display: none;
+}
 @media only screen and (max-width: 720px) {
     nav {
         transition: all 0.4s ease-in-out;
         height: 13vh;
         position: fixed;
+        justify-content: center;
     }
 
     .logo-img {
         margin-top: 1vh;
         height: 7vh;
-        margin-right: 0vh;
     }
 
     .nav-wrapper {
@@ -119,6 +123,7 @@ hr{
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
+        margin-left: 10vw;
 
     }
     nav i.material-icons {
@@ -134,11 +139,27 @@ hr{
     .mainBody{
         padding-top: 13vh;
     }
+    .goBack{
+        padding: 0px;
+    }
+    .searchTrigger{
+        padding: 0px;
+    }
+    .moibleSearch{
+        margin: 10px;
+        width: 100%;
+        display: block;
+    }
+    .moibleSearch nuclia-search{
+        width: 98%;
+    }
+
 }
 
 footer{
     background-color: #222222;
     padding-top: 200px;
+    width: 100%;
 }
 
 .footerText{
@@ -155,4 +176,25 @@ footer{
     padding-top: 20px;
     padding-bottom: 30px;
     float: left;
+    
+
+}
+.searchContainer{
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 37%;
+}
+.searchContainer .goBack{
+    padding: 10px;
+}
+
+.goBack:hover{
+    background-color: #22222234;
+}
+nuclia-search{
+    display: inline-block;
+    width: 33vw;
+    color: black;
 }
