@@ -135,3 +135,24 @@ hr{
         padding-top: 13vh;
     }
 }
+
+footer{
+    background-color: #222222;
+    padding-top: 200px;
+}
+
+.footerText{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(18, 18, 18);
+    text-align: left;
+    color: #666;
+    font-size: 18px !important;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    padding-top: 20px;
+    padding-bottom: 30px;
+    float: left;
+}

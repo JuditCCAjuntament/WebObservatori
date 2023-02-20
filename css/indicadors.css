@@ -1,9 +1,10 @@
 .indicadorsDiv{
-    margin-top: 20vh;
+    margin-top: 15vh;
     display: flex;
     align-items: flex-start;
     width: 100%;
     justify-content: space-between;
+    position: relative;
 }
 .indicadorsDiv ul:not(.browser-default)>li {
     list-style-type: disc;
@@ -86,7 +87,10 @@
     background-color: #dd8866;
 }
 
-
+.sendDiv a:hover{
+    border-color: transparent;
+    background-color: #419e8c; 
+}
 .indicsDiv i.material-icons{
     font-size: 30px;
     vertical-align: middle;
@@ -122,6 +126,6 @@
     }
     .indicsDiv a{
         padding-right: 10px;
-    padding-left: 10px;
+        padding-left: 10px;
     }
 }
