@@ -31,14 +31,14 @@ nav .moibleSearch:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: space-between;
+    width: 60%;
 }
 
 .logo-img {
     margin-top: 1vh;
     height: 11vh;
-    margin-right: 5vw;
+    align-self: flex-start;
 }
 
 .menu-text {
@@ -203,9 +203,9 @@ footer{
 .searchContainer{
     display: none;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    width: 37%;
+    width: 60%;
 }
 .searchContainer .goBack{
     padding: 10px;
@@ -216,6 +216,7 @@ footer{
 }
 nuclia-search{
     display: inline-block;
-    width: 33vw;
+    width: 32vw;
+
     color: black;
 }
