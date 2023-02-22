@@ -16,12 +16,23 @@ nav ul li:hover {
     background-color: white;
 }
 
+nav .moibleSearch:hover {
+    background-color: white;
+}
+
 .nav-wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 
+}
+.mobileHolder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .logo-img {
@@ -108,23 +119,22 @@ hr{
 @media only screen and (max-width: 720px) {
     nav {
         transition: all 0.4s ease-in-out;
-        height: 13vh;
+        height: 16vh;
         position: fixed;
         justify-content: center;
     }
 
     .logo-img {
-        margin-top: 1vh;
+        z-index: 999;
+        margin-top: 20px;
         height: 7vh;
     }
 
     .nav-wrapper {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        margin-left: 10vw;
-
     }
     nav i.material-icons {
         color: #742369;
@@ -145,14 +155,25 @@ hr{
     .searchTrigger{
         padding: 0px;
     }
-    .moibleSearch{
-        margin: 10px;
+    .mobileHolder{
         width: 100%;
+    }
+    .moibleSearch{
+        z-index: -10;
+        margin-top: -25px;
+        padding-left: 10px;
+        width: 100vw;
+        height: fit-content;
         display: block;
+       
+
     }
     .moibleSearch nuclia-search{
-        width: 98%;
+        z-index: -10;
+        margin: 0px;
+        width: 95%;
     }
+    
 
 }
 
